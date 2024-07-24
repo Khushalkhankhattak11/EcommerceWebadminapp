@@ -31,9 +31,13 @@ class HomePage extends StatelessWidget {
                 children: [
                   MyAppBarWidget(),
                   SizedBox(height: 20),
-                  Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child:Consumer<DrawerProvider>(builder: (context,value,child)=>value.pages[value.selectedPageIndex]),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child:Consumer<DrawerProvider>(builder: (context,value,child)=>value.pages[value.selectedPageIndex]),
+                      ),
+                    ),
                   )
                 ],
               ),

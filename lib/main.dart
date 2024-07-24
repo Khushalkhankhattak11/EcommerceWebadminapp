@@ -1,10 +1,17 @@
+import 'package:ecommerceadmin/configs/pagerouter.dart';
 import 'package:ecommerceadmin/configs/theme.dart';
-import 'package:ecommerceadmin/views/home/home_page.dart';
+import 'package:ecommerceadmin/provider/category/category_provider.dart';
 import 'package:ecommerceadmin/provider/drawer/drawer_provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -17,14 +24,15 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_)=>DrawerProvider()),
+        ChangeNotifierProvider(create: (_) => CategoryProvider()),
       ],
-      child: MaterialApp(
+      child: MaterialApp.router(
         title: 'Flutter Demo',
         theme: lightTheme,
         themeMode: ThemeMode.dark,
         darkTheme: darkTheme,
 
-        home: HomePage(),
+      routerConfig: router,
         debugShowCheckedModeBanner: false,
       ),
     );

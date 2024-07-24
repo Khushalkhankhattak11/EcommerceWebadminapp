@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "561609644517",
+    "project_id": "adminecommerce-f7336",
+    "storage_bucket": "adminecommerce-f7336.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561609644517:android:d4fe8b566bbc0e4eff770c",
+        "android_client_info": {
+          "package_name": "com.khan.ecommerceadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtIUWo9eL4DuFZqW6B3NZOQZO6lfP5k0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
