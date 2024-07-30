@@ -1,4 +1,4 @@
-import 'package:deshi_mart/models/SubCategory.dart';
+import 'package:ecommerceadmin/models/SubCategory.dart';
 
 class Category {
   String? id;

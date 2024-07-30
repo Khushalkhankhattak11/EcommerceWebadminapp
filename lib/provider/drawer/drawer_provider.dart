@@ -1,7 +1,7 @@
-import 'package:ecommerceadmin/views/pages/category/category_page.dart';
+import 'package:ecommerceadmin/views/pages/Product/ProductPage.dart';
+import 'package:ecommerceadmin/views/pages/category/CategoryPage.dart';
 import 'package:ecommerceadmin/views/pages/coupon/coupon_page.dart';
 import 'package:ecommerceadmin/views/pages/dashboard/dashboard.dart';
-import 'package:ecommerceadmin/views/pages/products/products_page.dart';
 import 'package:ecommerceadmin/views/pages/setting/setting_page.dart';
 import 'package:flutter/material.dart';
 

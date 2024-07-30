@@ -3,6 +3,7 @@ import 'package:ecommerceadmin/views/pages/widget/dashboardwidget/dashboarditemw
 import 'package:ecommerceadmin/views/pages/widget/dashboardwidget/orderhistroywidget.dart';
 import 'package:ecommerceadmin/widget/MyIconButton.dart';
 import 'package:ecommerceadmin/widget/PrimaryButton.dart';
+import 'package:ecommerceadmin/widget/responsivelayout.dart';
 import 'package:flutter/material.dart';
 
 
@@ -11,6 +12,7 @@ class DashboardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDestop =Responsivelayout.isDesktop(context);
     var statics = [
       {"icon": IconsAssets.cart, "label": "Total Order", "value": "234"},
       {"icon": IconsAssets.refresh, "label": "Pending Order", "value": "24"},
@@ -57,6 +59,7 @@ class DashboardPage extends StatelessWidget {
           ],
         ),
         SizedBox(height: 20),
+
         Row(
           children: statics
               .map(

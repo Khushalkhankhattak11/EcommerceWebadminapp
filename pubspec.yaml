@@ -48,6 +48,7 @@ dependencies:
   firebase_auth: ^5.1.2
   uuid: ^4.4.2
   cloud_firestore: ^5.1.0
+  firebase_storage: ^12.0.1
   toastification:
 dev_dependencies:
   flutter_test:
